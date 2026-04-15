@@ -27,7 +27,7 @@ export default function Industries() {
   return (
     <section className="py-20 px-6 md:px-28 bg-white">
       {/* Header row */}
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 text-center md:text-left">
         <div>
           <p className="text-sm font-display tracking-[0.2em] text-brand uppercase mb-3">
             Industries
@@ -36,7 +36,7 @@ export default function Industries() {
             Experience Across Key <br/>African Industries.
           </h2>
         </div>
-        <p className="text-lg font-body text-gray-600 max-w-xs leading-relaxed">
+        <p className="text-lg font-body text-gray-600 max-w-xs leading-relaxed mx-auto md:mx-0">
           We support organisations operating in regulated, fast-moving, and
           growth-driven sectors.
         </p>

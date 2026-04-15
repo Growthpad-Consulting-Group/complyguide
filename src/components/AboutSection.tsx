@@ -6,15 +6,13 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         {/* Left — text */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 text-center md:text-left">
           <p className="text-sm font-display tracking-[0.2em] text-brand uppercase">
             About ComplyGuide
           </p>
-
           <h2 className="text-3xl md:text-4xl font-display font-normal text-white uppercase leading-tight">
             Clarity and Confidence in Tax &amp; Compliance.
           </h2>
-
           <div className="flex flex-col gap-4 text-xl font-body text-gray-200 leading-relaxed">
             <p>
               ComplyGuide Advisory is a Kenya-based tax and compliance firm
@@ -28,17 +26,16 @@ export default function AboutSection() {
               solutions.
             </p>
           </div>
-
-          <div className="flex flex-wrap gap-4 mt-2">
+          <div className="flex flex-col sm:flex-row gap-4 mt-2">
             <Link
               href="/services"
-              className="px-6 py-3 bg-white text-gray-900 text-md tracking-wide font-body hover:bg-gray-200 transition-colors"
+              className="px-6 py-3 bg-white text-gray-900 text-md tracking-wide font-body hover:bg-gray-200 transition-colors text-center"
             >
               Explore Our Services
             </Link>
             <Link
               href="/contact"
-              className="px-6 py-3 border border-white text-white text-md tracking-wide font-body hover:bg-white/10 transition-colors"
+              className="px-6 py-3 border border-white text-white text-md tracking-wide font-body hover:bg-white/10 transition-colors text-center"
             >
               Book a Consultation
             </Link>
