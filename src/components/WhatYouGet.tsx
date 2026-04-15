@@ -32,11 +32,11 @@ export default function WhatYouGet() {
           <p className="text-sm font-display tracking-[0.2em] text-brand uppercase mb-3">
             What You Get
           </p>
-          <h2 className="text-3xl md:text-4xl font-display font-normal text-zinc-900 uppercase leading-tight max-w-2xl">
+          <h2 className="text-3xl md:text-4xl font-display font-normal text-gray-900 uppercase leading-tight max-w-2xl">
             Minimal Effort. Maximum Compliance Confidence.
           </h2>
         </div>
-        <p className="text-lg font-body text-zinc-600 max-w-xs leading-relaxed">
+        <p className="text-lg font-body text-gray-600 max-w-xs leading-relaxed">
           Clear guidance, reliable execution, and systems that keep you ahead
           of deadlines and risk.
         </p>
@@ -47,7 +47,7 @@ export default function WhatYouGet() {
         {cards.map((card) => (
           <div
             key={card.title}
-            className="group p-8 py-12 border border-zinc-800 rounded-sm flex flex-col gap-10 transition-all duration-500 hover:border-brand hover:-translate-y-2"
+            className="group p-8 py-12 border border-gray-800 rounded-sm flex flex-col gap-10 transition-all duration-500 hover:border-brand hover:-translate-y-2"
           >
             <Image
               src="/assets/icons/court.svg"
@@ -56,10 +56,10 @@ export default function WhatYouGet() {
               height={52}
             />
             <div className="flex flex-col gap-6">
-              <h3 className="text-2xl font-body! font-bold text-zinc-900 group-hover:text-brand transition-colors">
+              <h3 className="text-2xl font-body! font-bold text-gray-900 group-hover:text-brand transition-colors">
                 {card.title}
               </h3>
-              <p className="text-xl font-body text-zinc-600 leading-relaxed">
+              <p className="text-xl font-body text-gray-600 leading-relaxed">
                 {card.description}
               </p>
             </div>

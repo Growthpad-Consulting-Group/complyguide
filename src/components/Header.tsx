@@ -35,7 +35,7 @@ export default function Header() {
               className={`px-5 py-3 text-md tracking-wide transition-colors font-body ${
                 active
                   ? "bg-brand text-white"
-                  : "text-zinc-700 hover:bg-zinc-100"
+                  : "text-gray-700 hover:bg-gray-100"
               }`}
             >
               {link.label}
@@ -74,10 +74,10 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className={`px-6 py-4 text-sm tracking-wide border-b border-zinc-100 font-body transition-colors ${
+                className={`px-6 py-4 text-sm tracking-wide border-b border-gray-100 font-body transition-colors ${
                   active
                     ? "bg-brand text-white"
-                    : "text-zinc-700 hover:bg-zinc-50"
+                    : "text-gray-700 hover:bg-gray-50"
                 }`}
               >
                 {link.label}

@@ -35,7 +35,7 @@ export default function Hero() {
         </h1>
 
         {/* Subtext */}
-        <p className="mt-6 text-base sm:text-lg text-zinc-300 max-w-xl leading-relaxed font-body">
+        <p className="mt-6 text-base sm:text-lg text-gray-300 max-w-xl leading-relaxed font-body">
           ComplyGuide Advisory helps individuals, SMEs, and multinationals
           navigate tax and compliance—reducing risk and driving profitability.
         </p>
@@ -61,7 +61,7 @@ export default function Hero() {
           onClick={() =>
             document.getElementById("what-you-get")?.scrollIntoView({ behavior: "smooth" })
           }
-          className="mt-14 hidden sm:flex flex-col items-center gap-2 text-zinc-400 hover:text-white transition-colors cursor-pointer"
+          className="mt-14 hidden sm:flex flex-col items-center gap-2 text-gray-400 hover:text-white transition-colors cursor-pointer"
         >
           <Icon icon="solar:arrow-down-linear" width={28} height={28} />
           <span className="text-xs tracking-widest uppercase font-display">Explore More</span>
@@ -70,7 +70,7 @@ export default function Hero() {
         {/* Tags */}
         <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
           {tags.map((tag) => (
-            <span key={tag} className="flex items-center gap-2 text-sm text-zinc-300 font-body">
+            <span key={tag} className="flex items-center gap-2 text-sm text-gray-300 font-body">
               <span className="w-2 h-2 rounded-full bg-brand shrink-0" />
               {tag}
             </span>
