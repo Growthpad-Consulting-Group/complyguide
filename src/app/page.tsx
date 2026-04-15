@@ -6,6 +6,7 @@ import ServicesSection from "@/components/ServicesSection";
 import DigitalTools from "@/components/DigitalTools";
 import CtaBanner from "@/components/CtaBanner";
 import Industries from "@/components/Industries";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <DigitalTools />
       <CtaBanner />
       <Industries />
+      <Footer />
     </>
   );
 }
