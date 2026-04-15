@@ -17,7 +17,7 @@ export default function Header() {
       <Link href="/" className="shrink-0">
         <Image
           src="/assets/images/logo.svg"
-          alt="Comply Guide Advisory"
+          alt="ComplyGuide Advisory"
           width={300}
           height={0}
           priority

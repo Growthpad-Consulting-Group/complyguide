@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Comply Guide Advisory",
+  title: "ComplyGuide Advisory",
   description: "Expert compliance guidance and advisory services — Tax, Compliance & Strategy.",
 };
 

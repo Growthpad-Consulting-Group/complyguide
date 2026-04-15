@@ -57,10 +57,15 @@ export default function Hero() {
         </div>
 
         {/* Scroll hint */}
-        <div className="mt-14 hidden sm:flex flex-col items-center gap-2 text-zinc-400">
+        <button
+          onClick={() =>
+            document.getElementById("what-you-get")?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="mt-14 hidden sm:flex flex-col items-center gap-2 text-zinc-400 hover:text-white transition-colors cursor-pointer"
+        >
           <Icon icon="solar:arrow-down-linear" width={28} height={28} />
           <span className="text-xs tracking-widest uppercase font-display">Explore More</span>
-        </div>
+        </button>
 
         {/* Tags */}
         <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
