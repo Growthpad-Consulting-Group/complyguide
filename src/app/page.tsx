@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import WhatYouGet from "@/components/WhatYouGet";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
+import DigitalTools from "@/components/DigitalTools";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <WhatYouGet />
       <AboutSection />
       <ServicesSection />
+      <DigitalTools />
     </>
   );
 }
