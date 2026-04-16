@@ -8,11 +8,11 @@ export default function Footer() {
       {/* CTA block */}
       <div className="mx-6 md:mx-16">
         <div className="bg-brand px-10 py-12 flex flex-col md:flex-row md:items-end justify-between gap-8">
-          <div className="flex flex-col gap-4 text-center md:text-left">
+          <div className="flex flex-col gap-4">
             <h2 className="text-2xl md:text-3xl font-display font-medium text-[#111] uppercase leading-tight max-w-lg">
               Ready to Reduce Risk and Move With Confidence?
             </h2>
-            <p className="text-xl font-body text-[#111] max-w-sm leading-relaxed mx-auto md:mx-0">
+            <p className="text-xl font-body text-[#111] max-w-sm leading-relaxed">
               Speak to a compliance expert and get clear next steps for your
               business.
             </p>
