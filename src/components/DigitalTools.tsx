@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Icon } from "@iconify/react";
 
 const tools = [
@@ -45,19 +46,35 @@ export default function DigitalTools() {
       </div>
 
       {/* Body — 2/5 image col + 3/5 cards col */}
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-        {/* Left — image placeholders (2 cols) */}
-        <div className="md:col-span-2 flex flex-col gap-4">
-          <div className="w-full flex-1 min-h-[200px] bg-gray-200 rounded-sm" />
-          <div className="w-full flex-1 min-h-[200px] bg-gray-200 rounded-sm" />
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-stretch">
+        {/* Left — images (2 cols) */}
+        <div className="md:col-span-2 flex flex-col gap-4 h-full">
+          <div className="flex-1 min-h-[200px] rounded-sm overflow-hidden">
+            <Image
+              src="/assets/images/tax.png"
+              alt="Tax tools"
+              width={800}
+              height={450}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex-1 min-h-[200px] rounded-sm overflow-hidden">
+            <Image
+              src="/assets/images/audit.png"
+              alt="Auditor"
+              width={800}
+              height={450}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
         {/* Right — tool cards (3 cols) */}
-        <div className="md:col-span-3 flex flex-col gap-4">
+        <div className="md:col-span-3 flex flex-col gap-4 h-full">
           {tools.map((tool) => (
             <div
               key={tool.title}
-              className="group flex items-start gap-5 bg-[#111111] px-6 py-10 hover:bg-zinc-900 transition-colors duration-300"
+              className="group flex items-start gap-5 bg-[#111111] px-6 py-10 hover:bg-zinc-900 transition-all duration-500 flex-1 hover:-translate-y-1"
             >
               <Icon
                 icon={tool.icon}
@@ -66,10 +83,10 @@ export default function DigitalTools() {
                 className="text-gray-200 shrink-0 mt-1 p-2"
               />
               <div className="flex flex-col gap-1">
-                <h3 className="text-xl font-body! font-medium text-brand">
+                <h3 className="text-2xl font-body! font-medium text-brand">
                   {tool.title}
                 </h3>
-                <p className="text-md font-body text-gray-300 leading-relaxed">
+                <p className="text-lg font-body text-gray-300 leading-relaxed">
                   {tool.description}
                 </p>
               </div>

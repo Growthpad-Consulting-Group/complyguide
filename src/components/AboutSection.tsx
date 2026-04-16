@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutSection() {
@@ -45,9 +46,25 @@ export default function AboutSection() {
         {/* Right — image stack */}
         <div className="flex flex-col gap-4">
           {/* Top image — smaller, offset right */}
-          <div className="self-end w-4/5 aspect-video bg-gray-300 rounded-sm" />
+          <div className="self-end w-4/5 aspect-video bg-gray-300 rounded-sm overflow-hidden">
+            <Image
+              src="/assets/images/about-1.png"
+              alt="ComplyGuide Advisory"
+              width={800}
+              height={450}
+              className="w-full h-full object-cover"
+            />
+          </div>
           {/* Bottom image — larger, offset left */}
-          <div className="self-start w-full aspect-video bg-gray-300 rounded-sm" />
+          <div className="self-start w-full aspect-video bg-gray-300 rounded-sm overflow-hidden">
+            <Image
+              src="/assets/images/about-2.png"
+              alt="ComplyGuide Advisory"
+              width={1000}
+              height={563}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
       </div>
