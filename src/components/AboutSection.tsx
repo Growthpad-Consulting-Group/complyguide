@@ -35,7 +35,7 @@ export default function AboutSection() {
               Explore Our Services
             </Link>
             <Link
-              href="/contact"
+              href="/contact#contact-form"
               className="px-6 py-3 border border-white text-white text-md tracking-wide font-body hover:bg-white/10 transition-colors text-center"
             >
               Book a Consultation

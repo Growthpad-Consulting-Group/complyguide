@@ -44,7 +44,7 @@ export default function Hero() {
         {/* CTAs */}
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <Link
-            href="/contact"
+            href="/contact#contact-form"
             className="px-8 py-3 bg-brand text-white text-xs tracking-wide rounded-sm hover:bg-brand-dark transition-colors font-display"
           >
             Book a Consultation

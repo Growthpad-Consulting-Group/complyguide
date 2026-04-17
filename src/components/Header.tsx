@@ -44,7 +44,7 @@ export default function Header() {
         })}
 
         <Link
-          href="/contact"
+          href="/contact#contact-form"
           className="ml-8 px-6 py-3 bg-brand text-white text-md font-semibold tracking-wide hover:bg-brand-dark transition-colors font-body"
         >
           Book a Consultation
@@ -85,7 +85,7 @@ export default function Header() {
             );
           })}
           <Link
-            href="/contact"
+            href="/contact#contact-form"
             onClick={() => setMenuOpen(false)}
             className="mx-6 my-4 px-6 py-3 bg-brand text-white text-sm text-center tracking-wide hover:bg-brand-dark transition-colors font-body"
           >

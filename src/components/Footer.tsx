@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">
             <Link
-              href="/contact"
+              href="/contact#contact-form"
               className="px-6 py-3 bg-gray-900 text-white text-md font-body tracking-wide hover:bg-gray-800 transition-colors text-center"
             >
               Book a Consultation

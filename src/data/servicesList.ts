@@ -21,7 +21,7 @@ export const servicesList: ServiceItem[] = [
       "Dual taxation relief & treaty advisory",
     ],
     cta: "Consult Our Tax Team",
-    ctaHref: "/contact",
+    ctaHref: "/contact#contact-form",
     image: "/assets/images/tax_advisory.png",
   },
   {
@@ -36,7 +36,7 @@ export const servicesList: ServiceItem[] = [
       "Compliance audits and risk assessments",
     ],
     cta: "Get Compliance Support",
-    ctaHref: "/contact",
+    ctaHref: "/contact#contact-form",
     image: "/assets/images/compliance.png",
   },
   {
@@ -50,7 +50,7 @@ export const servicesList: ServiceItem[] = [
       "Trusts & wealth preservation strategies",
     ],
     cta: "Discuss Structuring Options",
-    ctaHref: "/contact",
+    ctaHref: "/contact#contact-form",
     image: "/assets/images/business_structuring.png",
   },
   {
@@ -77,7 +77,7 @@ export const servicesList: ServiceItem[] = [
       "Regulation & governance masterclasses",
     ],
     cta: "Enquire About Training",
-    ctaHref: "/contact",
+    ctaHref: "/contact#contact-form",
     image: "/assets/images/training.png",
   },
 ];

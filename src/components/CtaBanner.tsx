@@ -31,7 +31,7 @@ export default function CtaBanner() {
         {/* Right — CTAs */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center md:justify-end gap-4 shrink-0 w-full md:w-auto">
           <Link
-            href="/contact"
+            href="/contact#contact-form"
             className="px-8 py-3 bg-brand text-white text-md tracking-wide font-body hover:bg-brand-dark transition-colors text-center"
           >
             Book a Consultation
