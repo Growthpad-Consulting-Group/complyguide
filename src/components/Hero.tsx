@@ -17,10 +17,11 @@ export default function Hero() {
         backgroundImage: "url('/assets/images/hero-bg.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundAttachment: "fixed",
       }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#0d0d2b]/60" />
+      <div className="absolute inset-0 bg-[#0d0d2b]/25" />
 
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
         {/* Eyebrow */}
