@@ -171,10 +171,10 @@ export default function ContactForm() {
           <div className="bg-gray-900 px-6 py-6 flex flex-col gap-2 transition-all duration-500 hover:-translate-y-2">
             <h3 className="text-lg font-body! font-semibold text-brand">Email</h3>
             <a
-              href="mailto:info@complyguideadvisory.com"
+              href="mailto:info@complyguide.co.ke"
               className="text-lg font-body text-gray-300 hover:text-white transition-colors"
             >
-              info@complyguideadvisory.com
+              info@complyguide.co.ke
             </a>
           </div>
 

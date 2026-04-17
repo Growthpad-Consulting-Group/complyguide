@@ -75,10 +75,10 @@ export default function Footer() {
               Contact
             </p>
             <a
-              href="mailto:info@complyguideadvisory.com"
+              href="mailto:info@complyguide.co.ke"
               className="text-md font-body text-gray-300 hover:text-white transition-colors"
             >
-              info@complyguideadvisory.com
+              info@complyguide.co.ke
             </a>
             <p className="text-md font-body text-gray-100 leading-relaxed">
               6th Floor, The Westwood,<br />
