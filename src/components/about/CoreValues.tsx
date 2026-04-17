@@ -29,7 +29,7 @@ const values = [
 
 export default function CoreValues() {
   return (
-    <section className="py-20 px-6 md:px-16 bg-white">
+    <section className="pt-20 px-6 md:px-16 bg-white">
       {/* Header row */}
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
         <div>

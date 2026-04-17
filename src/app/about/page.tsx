@@ -5,6 +5,8 @@ import AboutHero from "@/components/about/AboutHero";
 import Timeline from "@/components/about/Timeline";
 import VisionMission from "@/components/about/VisionMission";
 import CoreValues from "@/components/about/CoreValues";
+import Credentials from "@/components/about/Credentials";
+import CtaBanner from "@/components/CtaBanner";
 
 export const metadata: Metadata = {
   title: "About Us | Comply Guide Advisory",
@@ -20,6 +22,8 @@ export default function AboutPage() {
       <Timeline />
       <VisionMission />
       <CoreValues />
+      <Credentials />
+      <CtaBanner />
       <Footer />
     </>
   );
