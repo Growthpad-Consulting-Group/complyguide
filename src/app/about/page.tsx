@@ -6,6 +6,7 @@ import Timeline from "@/components/about/Timeline";
 import VisionMission from "@/components/about/VisionMission";
 import CoreValues from "@/components/about/CoreValues";
 import Credentials from "@/components/about/Credentials";
+import Leadership from "@/components/about/Leadership";
 import CtaBanner from "@/components/CtaBanner";
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function AboutPage() {
       <VisionMission />
       <CoreValues />
       <Credentials />
+      <Leadership />
       <CtaBanner />
       <Footer />
     </>
