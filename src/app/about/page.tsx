@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AboutHero from "@/components/about/AboutHero";
 import Timeline from "@/components/about/Timeline";
+import VisionMission from "@/components/about/VisionMission";
 
 export const metadata: Metadata = {
   title: "About Us | Comply Guide Advisory",
@@ -16,6 +17,7 @@ export default function AboutPage() {
       <Header />
       <AboutHero />
       <Timeline />
+      <VisionMission />
       <Footer />
     </>
   );
