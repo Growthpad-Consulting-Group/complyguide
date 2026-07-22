@@ -1,7 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: process.env.SMTP_PORT ? parseInt(process.env.SMTP_PORT, 10) : 587,
+  secure: process.env.SMTP_SECURE === "true", // true for 465, false for other ports
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
 export async function POST(req: NextRequest) {
   try {
@@ -14,9 +22,9 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const { error } = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL!,
-      to: process.env.RESEND_TO_EMAIL!,
+    const mailOptions = {
+      from: process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER,
+      to: process.env.SMTP_TO_EMAIL,
       replyTo: email,
       subject: `New enquiry from ${name} — ${service || "General"}`,
       html: `
@@ -45,11 +53,13 @@ export async function POST(req: NextRequest) {
             </tr>
           </table>
         </div>
-      `,
-    });
+      ",
+    };
 
-    if (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 });
+    const info = await transporter.sendMail(mailOptions);
+
+    if (!info || info.rejected?.length) {
+      return NextResponse.json({ error: "Failed to send email." }, { status: 500 });
     }
 
     return NextResponse.json({ success: true }, { status: 200 });
