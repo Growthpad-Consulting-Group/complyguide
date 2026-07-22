@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
             </tr>
           </table>
         </div>
-      ",
+      `,
     };
 
     const info = await transporter.sendMail(mailOptions);
